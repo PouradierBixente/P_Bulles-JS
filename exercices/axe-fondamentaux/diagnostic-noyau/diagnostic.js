@@ -5,7 +5,7 @@
  */
 /**
  *
- * @param {*} value
+ * @param {string} value
  * @returns {*}
  */
 export function valueType(value) {
@@ -18,7 +18,7 @@ export function valueType(value) {
  */
 /**
  *
- * @param {*} value
+ * @param {string} value
  * @returns {boolean}
  */
 export function isUndefined(value) {
@@ -32,7 +32,7 @@ export function isUndefined(value) {
  */
 /**
  *
- * @param {*} value
+ * @param {string} value
  * @returns {boolean}
  */
 export function isNull(value) {
@@ -47,7 +47,7 @@ export function isNull(value) {
  */
 /**
  *
- * @param {*} value
+ * @param {string} value
  * @returns {boolean}
  */
 export function hasKnownValue(value) {
@@ -62,8 +62,8 @@ export function hasKnownValue(value) {
  */
 /**
  *
- * @param {*} energy
- * @param {*} minimumEnergy
+ * @param {number} energy
+ * @param {number} minimumEnergy
  * @returns {boolean}
  */
 export function hasEnoughEnergy(energy, minimumEnergy) {
@@ -78,8 +78,8 @@ export function hasEnoughEnergy(energy, minimumEnergy) {
  */
 /**
  *
- * @param {*} zone
- * @param {*} expectedZone
+ * @param {string} zone
+ * @param {string} expectedZone
  * @returns {boolean}
  */
 export function isCorrectZone(zone, expectedZone) {
