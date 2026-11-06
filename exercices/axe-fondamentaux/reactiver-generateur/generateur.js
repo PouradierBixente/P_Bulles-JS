@@ -33,7 +33,7 @@ export function energyPercentage(maxEnergy, currentEnergy) {
  *
  * @param {number} currentEnergy
  * @param {number} recharge
- * @returns
+ * @returns {number}
  */
 export function energyAfterRecharge(currentEnergy, recharge) {
   // TODO
@@ -48,7 +48,7 @@ export function energyAfterRecharge(currentEnergy, recharge) {
 /**
  *
  * @param {number} currentEnergy
- * @returns
+ * @returns {boolean}
  */
 export function isGeneratorReady(currentEnergy) {
   // TODO
@@ -62,11 +62,11 @@ export function isGeneratorReady(currentEnergy) {
  */
 /**
  *
- * @param {*} name
- * @param {*} currentEnergy
- * @returns
+ * @param {string} name
+ * @param {number} currentEnergy
+ * @returns {string}
  */
 export function generatorStatus(name, currentEnergy) {
   // TODO
-  return name + " possède " + currentEnergy + " unités d'énergie.";
+  return `${name} possède ${currentEnergy} unités d'énergie.`;
 }

@@ -5,8 +5,8 @@
  */
 /**
  *
- * @param {*} value
- * @returns
+ * @param {string} value
+ * @returns {number}
  */
 export function convertCode(value) {
   // TODO
@@ -19,9 +19,9 @@ export function convertCode(value) {
  */
 /**
  *
- * @param {*} value1
- * @param {*} value2
- * @returns
+ * @param {number} value1
+ * @param {number} value2
+ * @returns {boolean}
  */
 export function sameCodeLoose(value1, value2) {
   // TODO
@@ -33,9 +33,9 @@ export function sameCodeLoose(value1, value2) {
  */
 /**
  *
- * @param {*} value1
- * @param {*} value2
- * @returns
+ * @param {number} value1
+ * @param {number} value2
+ * @returns {boolean}
  */
 export function sameCodeStrict(value1, value2) {
   // TODO
@@ -47,8 +47,8 @@ export function sameCodeStrict(value1, value2) {
  */
 /**
  *
- * @param {*} code
- * @returns
+ * @param {number} code
+ * @returns {boolean}
  */
 export function isEvenCode(code) {
   // TODO
@@ -60,8 +60,8 @@ export function isEvenCode(code) {
  */
 /**
  *
- * @param {*} value
- * @returns
+ * @param {string} value
+ * @returns {number}
  */
 export function isInvalidCode(value) {
   // TODO
