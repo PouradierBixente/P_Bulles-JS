@@ -60,6 +60,12 @@ export function isStormAlert(speedKmh) {
 /**
  * Construit le bulletin météo d'une station.
  */
+/**
+ *
+ * @param {string} station
+ * @param {number} speedKmh
+ * @returns {string}
+ */
 export function windReport(station, speedKmh) {
   // TODO
   return `${station} : vent de ${speedKmh} km/h (${speedKmh / conversion} m/s).`;
