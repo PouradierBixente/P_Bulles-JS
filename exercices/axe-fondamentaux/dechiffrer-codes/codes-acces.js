@@ -61,7 +61,7 @@ export function isEvenCode(code) {
 /**
  *
  * @param {string} value
- * @returns {number}
+ * @returns {boolean}
  */
 export function isInvalidCode(value) {
   // TODO
