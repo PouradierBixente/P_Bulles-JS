@@ -50,6 +50,12 @@ export function countX(code) {
 /**
  * Calcule le nombre de tours complets possibles avant épuisement de l'énergie.
  */
+/**
+ *
+ * @param {number} energy
+ * @param {number} consumption
+ * @returns {number}
+ */
 export function turnsBeforeEmpty(energy, consumption) {
   // TODO
   let number = 0;
@@ -63,13 +69,19 @@ export function turnsBeforeEmpty(energy, consumption) {
 /**
  * Retourne la première ronde pour laquelle le total dépasse une limite.
  */
+/**
+ *
+ * @param {number} limit
+ * @returns  {number}
+ */
 export function firstRoundAbove(limit) {
   // TODO
   let total = 0;
-  let i = 1;
-  while (limit > total) {
-    i += i;
-    total += i;
+  let i = 0;
+  while (limit >= total) {
+    if (total == 0) total += 1;
+    else total += total;
+    i += 1;
   }
-  return total;
+  return i;
 }
