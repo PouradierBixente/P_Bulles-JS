@@ -5,6 +5,9 @@
  */
 export function sumFragments(...fragments) {
   // TODO
+  let number = 0;
+  for (let i of fragments) number = number + i;
+  return number;
 }
 
 /**
@@ -12,6 +15,7 @@ export function sumFragments(...fragments) {
  */
 export function countFragments(...fragments) {
   // TODO
+  return fragments.length;
 }
 
 /**
@@ -19,6 +23,9 @@ export function countFragments(...fragments) {
  */
 export function averageFragments(...fragments) {
   // TODO
+  let number = 0;
+  for (let i of fragments) number = number + i;
+  return number / fragments.length;
 }
 
 /**
@@ -26,6 +33,9 @@ export function averageFragments(...fragments) {
  */
 export function totalWithBase(base, ...fragments) {
   // TODO
+  let number = 0;
+  for (let i of fragments) number = number + i;
+  return number + base;
 }
 
 /**
@@ -33,6 +43,7 @@ export function totalWithBase(base, ...fragments) {
  */
 export function formulaLabel(name, ...values) {
   // TODO
+  return `${name} : ${values.length} valeurs`;
 }
 
 /**
@@ -40,4 +51,6 @@ export function formulaLabel(name, ...values) {
  */
 export function prepareMixture(name, ...values) {
   // TODO
+  let total = countFragments(values);
+  return `${name} = ${total}`;
 }
