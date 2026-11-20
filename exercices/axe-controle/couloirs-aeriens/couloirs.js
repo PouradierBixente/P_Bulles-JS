@@ -91,13 +91,13 @@ export function checkAirspace(altitudes) {
 /**
  *
  * @param {*} altitudes
- * @returns {string}
+ * @returns {*}
  */
 export function airspaceReport(altitudes) {
   // TODO
   try {
     return checkAirspace(altitudes);
   } catch (error) {
-    return `Alerte : ${error.message}`;
+    if (error instanceof Error) return `Alerte : ${error.message}`;
   }
 }
