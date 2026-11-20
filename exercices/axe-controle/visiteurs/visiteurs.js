@@ -77,13 +77,11 @@ export function requiresMaster(university) {
  */
 export function isTrusted(university, title) {
   // TODO
-  if (
+  return (
     isKnownUniversity(university) &&
     ((!requiresMaster(university) && titleLevel(title) >= 1) ||
       (requiresMaster(university) && titleLevel(title) >= 2))
-  )
-    return true;
-  return false;
+  );
 }
 
 /**
@@ -119,6 +117,5 @@ export function allTrusted(universities, titles) {
   for (let i = 0; i <= universities.length; i++) {
     if (isTrusted(universities[i], titles[i])) number++;
   }
-  if (number == universities.length) return true;
-  else return false;
+  return number == universities.length;
 }
